@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fd;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 380px;
+}
+
+.title {
+    margin: 0;
+}
+
+.subtitle {
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+
+.header {
+    background-color: #a19701;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+#filter {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+}
+
+#filter::placeholder {
+    color: rgb(206, 206, 206);
+}
+
+.user-list {
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.user-list li {
+    display: flex;
+    padding: 20px;
+}
+
+.user-list img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.user-list .user-info {
+    margin-left: 10px;
+}
+
+.user-list .user-info h4 {
+    margin: 18px 50px 2px;
+    color: #000000;
+}
+
+.user-list li:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+.user-list li.hide {
+    display: none;
+}
+
+li:hover {
+    background-color: #f0f1f5;
+}
+
+.user-list::-webkit-scrollbar {
+    display: none;
+}
+
+.user-list .user-info  p {
+    font-size: 12px;
+}
+
+.total {
+    margin: 10px;
+    font-size: 12px;
+    color: #f0f1f5;
+}
